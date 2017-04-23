@@ -1,0 +1,127 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+<meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=10.0, user-scalable=0">
+    <title>Pushbox</title>
+    <style type="text/css">
+        body{
+            padding:0px;
+            margin:0px;
+        }
+    </style>   
+    <script src="js/phaser.min.js"></script>
+    <script src="js/Boot.js"></script>
+    <script src="js/Preloader.js"></script>
+    <script src="js/MainMenu.js"></script>
+    <script src="js/help.js"></script>
+    <script src="js/about.js"></script>
+    <script src="js/SelectLevel.js"></script>
+    <script src="js/SelectLevel2.js"></script>
+    <script src="js/Level1.js"></script>
+    <script src="js/Level2.js"></script>
+    <script src="js/Level21.js"></script>
+    <script src="js/Level3.js"></script>
+    <script src="js/Level41.js"></script>
+    <script src="js/Level4.js"></script>
+    <script src="js/Level40.js"></script>
+    <script src="js/Level42.js"></script>
+    <script src="js/Level5.js"></script>
+    <script src="js/Level51.js"></script>
+    <script src="js/Level61.js"></script>
+    <script src="js/Level52.js"></script>
+    <script src="js/Level53.js"></script>
+    <script src="js/Level22.js"></script>
+    <script src="js/Level7.js"></script>
+    
+    <script src="js/Level1_1.js"></script>
+    <script src="js/Level2_1.js"></script>
+    <script src="js/Level21_1.js"></script>
+    <script src="js/Level22_1.js"></script>
+    <script src="js/Level3_1.js"></script>
+    
+    <script src="js/Level41_1.js"></script>
+    <script src="js/Level4_1.js"></script>
+    <script src="js/Level40_1.js"></script>
+    <script src="js/Level42_1.js"></script>
+    <script src="js/Level5_1.js"></script>
+    <script src="js/Level51_1.js"></script>
+    <script src="js/Level61_1.js"></script>
+    <script src="js/Level52_1.js"></script>
+    <script src="js/Level53_1.js"></script>
+    <script src="js/Level22_1.js"></script>
+    <script src="js/Level7_1.js"></script>
+
+    <script src="js/Level6.js"></script>
+    <script src="js/Level62.js"></script>
+    <script src="js/Level63.js"></script>
+    
+</head>
+<body>
+
+<div id = "game"></div>
+<div id = "orientation"></div>
+
+<script type="text/javascript">
+    
+    window.onload = function(){
+
+        var game = new Phaser.Game(1020, 720, Phaser.AUTO, 'Pushbox');
+        var width = 1020;
+        var height = 720;
+
+        game.state.add('Boot',Pushbox.Boot);
+        game.state.add('Preloader',Pushbox.Preloader);
+        game.state.add('MainMenu',Pushbox.MainMenu);
+        game.state.add('about',Pushbox.about);
+        game.state.add('help',Pushbox.help);
+        game.state.add('SelectLevel',Pushbox.SelectLevel);
+        game.state.add('SelectLevel2',Pushbox.SelectLevel2);
+        game.state.add('Level1',Pushbox.Level1);
+        game.state.add('Level2',Pushbox.Level2);
+        game.state.add('Level21',Pushbox.Level21);        
+        game.state.add('Level3',Pushbox.Level3);
+        game.state.add('Level41',Pushbox.Level41);
+        game.state.add('Level4',Pushbox.Level4);
+        game.state.add('Level40',Pushbox.Level40);
+        game.state.add('Level42',Pushbox.Level42);
+        game.state.add('Level5',Pushbox.Level5);
+        game.state.add('Level51',Pushbox.Level51);
+        game.state.add('Level61',Pushbox.Level61);
+        game.state.add('Level52',Pushbox.Level52);
+        game.state.add('Level53',Pushbox.Level53);
+        game.state.add('Level22',Pushbox.Level22);
+        game.state.add('Level7',Pushbox.Level7);
+       
+        game.state.add('Level1_1',Pushbox.Level1_1);
+        game.state.add('Level2_1',Pushbox.Level2_1);
+        game.state.add('Level21_1',Pushbox.Level21_1);
+        game.state.add('Level22_1',Pushbox.Level22_1);
+        game.state.add('Level3_1',Pushbox.Level3_1);
+
+        game.state.add('Level41_1',Pushbox.Level41_1);
+        game.state.add('Level4_1',Pushbox.Level4_1);
+        game.state.add('Level40_1',Pushbox.Level40_1);
+        game.state.add('Level42_1',Pushbox.Level42_1);
+        game.state.add('Level5_1',Pushbox.Level5_1);
+        game.state.add('Level51_1',Pushbox.Level51_1);
+        game.state.add('Level61_1',Pushbox.Level61_1);
+        game.state.add('Level52_1',Pushbox.Level52_1);
+        game.state.add('Level53_1',Pushbox.Level53_1);
+        game.state.add('Level22_1',Pushbox.Level22_1);
+        game.state.add('Level7_1',Pushbox.Level7_1); 
+
+        game.state.add('Level6',Pushbox.Level6);
+        game.state.add('Level62',Pushbox.Level62);
+        game.state.add('Level63',Pushbox.Level63);
+
+
+        game.state.start('Boot');
+    };
+
+</script>
+
+</body>
+</html>
